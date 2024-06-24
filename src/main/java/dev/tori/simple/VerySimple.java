@@ -1,3 +1,5 @@
+package dev.tori.simple;
+
 import java.io.PrintStream;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
