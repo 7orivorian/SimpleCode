@@ -584,7 +584,6 @@ public class SuperiorHelloWorld {
                 MethodHandle throwException = MethodHandles.lookup().findVirtual(Unsafe.class, "throwException", voidAndThrowableMethodType);
                 throwException.invokeExact(unsafe, exception);
             }
-
             return null;
         }
     }
