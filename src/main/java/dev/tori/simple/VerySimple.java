@@ -13,6 +13,8 @@ import java.util.function.Supplier;
 
 /**
  * The very first program any developer writes!
+ *
+ * @author <a href="https://github.com/7orivorian">7orivorian</a>
  */
 @SuppressWarnings("ALL")
 public class VerySimple {
@@ -53,7 +55,7 @@ public class VerySimple {
                 }.apply(new Supplier<char[]>() {
                     @Override
                     public char[] get() {
-                        return new String(new byte[]{72, 101, 108, 108, 111, 32}).toCharArray();
+                        return new String(new byte[]{0b1001000, 0b1100101, 0b1101100, 0b1101100, 0b1101111, 0b100000}).toCharArray();
                     }
                 }.get()), new Function<char[], String>() {
                     @Override
@@ -75,7 +77,7 @@ public class VerySimple {
                 }.apply(new Supplier<char[]>() {
                     @Override
                     public char[] get() {
-                        return new String(new byte[]{119, 111, 114, 108, 100, 33}).toCharArray();
+                        return new String(new byte[]{0x77, 0x6f, 0x72, 0x6c, 0x64, 0x21}).toCharArray();
                     }
                 }.get()));
                 return res;
